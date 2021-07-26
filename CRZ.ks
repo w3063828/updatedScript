@@ -1,0 +1,2 @@
+RUNPATH("0:/PICKUP.KS").
+WAIT 50.

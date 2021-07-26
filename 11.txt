@@ -1,0 +1,10 @@
+SET FOO TO LIST().
+SET input TO LIST(1,2,3).
+FOO:ADD( LIST() ). // Element 0 is now itself a list.
+SET vec TO LIST( V(0.2,0.8,-0.5),V(0.5,-0.91,0.26),V(-0.26,-0.27,0.17))
+FOO:ADD(LIST()).   // Element 1 is now itself a list.
+SET bias TO LIST(2,3,0.5).
+FOO:ADD(LIST()). 
+FOR var in FOO {         // --.
+  print var.             //   |-- Print all the contents of FOO.
+}.
